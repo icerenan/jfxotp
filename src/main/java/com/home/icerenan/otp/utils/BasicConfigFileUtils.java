@@ -21,7 +21,6 @@ public class BasicConfigFileUtils {
             return;
         }
         BasicConfigMapCacheUtils.getInstance().putAll(JSONObject.parseObject(content,Map.class));
-        return ;
     }
     public static void writeBasicConfigContent() throws IOException {
         if(BasicConfigMapCacheUtils.getInstance().size()<1){
