@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.home.icerenan.otp.controller.OtpController"
+            prefHeight="400" prefWidth="280">
+    <BorderPane fx:id="borderPane" prefHeight="400" prefWidth="280">
+        <top>
+            <MenuBar>
+                <Menu text="Home">
+                    <MenuItem fx:id="home" onAction="#otpHome" text="Home"/>
+                    <MenuItem fx:id="exit" onAction="#otpExit" text="Exit"/>
+                </Menu>
+                <Menu text="Otp">
+                    <MenuItem fx:id="view" onAction="#otpView" text="View"/>
+                    <MenuItem fx:id="add" onAction="#otpAdd" text="Add"/>
+                </Menu>
+                <Menu text="Help">
+                    <MenuItem fx:id="help" onAction="#otpHelp" text="Help"/>
+                    <MenuItem fx:id="about" onAction="#otpAbout" text="About"/>
+                </Menu>
+            </MenuBar>
+        </top>
+    </BorderPane>
+
+</AnchorPane>
